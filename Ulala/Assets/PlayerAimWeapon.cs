@@ -28,7 +28,7 @@ public class PlayerAimWeapon : MonoBehaviour
 
         Vector3 aimdirection = AimDirection();
         float angle = Mathf.Atan2(aimdirection.y, aimdirection.x) * Mathf.Rad2Deg;
-        aimTransform.eulerAngles = new Vector3(0, 0, angle);
+        transform.eulerAngles = new Vector3(0, 0, angle - 90);
     }
     private void ClickEvent()
     {
