@@ -42,7 +42,7 @@ public class PlayerAimWeapon : MonoBehaviour
     {
         GameObject bullet = Instantiate(Bullet);
         bullet.GetComponent<BulletController>().Init(AimDirection(),transform.position,BulletType.Player);
-        Destroy(bullet, 3f);
+        Destroy(bullet, 4f);
     }
 
     private Vector3 AimDirection()
